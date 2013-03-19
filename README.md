@@ -1,6 +1,12 @@
 If a package tries to reference 3 packages with the same exact constratins, pub is not able to resolve the version constraints. Another possible issue is better error output on why the constraints are not met. `Could not find a solution that met all version constraints.` is not very helpful. 
 
 ```
+$ cd pub_bug/package_b/ && pub install
+Resolving dependencies...
+Could not find a solution that met all version constraints.
+```
+
+```
 21:02:27-adam@Adams-MacBook-Air:/tmp/pub_bug/package_b
 $ pub --verbose install
 MSG : Resolving dependencies...
